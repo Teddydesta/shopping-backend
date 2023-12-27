@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const mongoose = require('mongoose');
 
-const connectionStr = "mongodb+srv://nedamco:121621@teddycluster.ipsqggd.mongodb.net/?retryWrites=true&w=majority";
+const connectionStr = "mongodb://localhost:27017/ecommerce";
 
 mongoose.connect(connectionStr, {useNewUrlparser: true})
 .then(() => console.log('connected to mongodb'))
